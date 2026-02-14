@@ -1,0 +1,228 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  margin: 0;
+  color: #1f2933;
+  line-height: 1.9;
+
+  background: url("ai-illustration.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* طبقة تعتيم فوق الخلفية */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: -1;
+}
+
+/* ===== الهيدر ===== */
+header {
+  background: linear-gradient(135deg, #0f766e, #22c55e);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+header img {
+  max-width: 100px;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  margin: 10px 0;
+}
+
+.register-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: #0f766e;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== التخطيط ===== */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== الكروت ===== */
+section {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+section:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== صورة ===== */
+.feature-image {
+  margin-top: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== الشارات ===== */
+.badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  margin-bottom: 12px;
+}
+
+/* ===== المسارات ===== */
+.track-card {
+  background: #f8fffb;
+  border: 1px solid #d1fae5;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.track-card:hover {
+  box-shadow: 0 8px 20px rgba(34,197,94,0.15);
+}
+
+/* ===== زر التحميل ===== */
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #0f766e, #22c55e);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.9em;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== الفوتر ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #e6f4ea;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* ===== عنوان القسم ===== */
+.section-title {
+  margin-bottom: 25px;
+  color: #0f766e;
+  text-align: center;
+}
+
+/* ===== شبكة المسارات ===== */
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .tracks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== تصميم البطاقة الحديثة ===== */
+.modern-track {
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #bbf7d0;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.modern-track:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(34,197,94,0.2);
+  border-color: #22c55e;
+}
+
+/* ===== الأيقونة ===== */
+.track-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* ===== زر حديث ===== */
+.modern-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #0f766e, #22c55e);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.modern-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(34,197,94,0.35);
+}
+
+/* ===== بطاقة أفقية ===== */
+.modern-track.horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+
+
